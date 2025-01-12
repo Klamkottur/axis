@@ -1,0 +1,136 @@
+/* AUTO=sticky_menu */ @media screen and (min-width: 1025px) { .l-top_menu-v2 { position: sticky; top: 0; } .l-top_menu-v2 .active .submenu { max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto; } }
+
+:root {
+	--headline: #a5e2f4; 
+	--headline-text: #0a0066;;
+
+	--top_menu: #91c5ed;
+	--top_menu-v2: rgba(121, 169, 207, 0.50);
+	--top_menu-v3: #47657e;
+  
+	--main_title: #1e6ec0;
+}
+
+body { 
+	background: url(https://raw.githubusercontent.com/Klamkottur/axis/refs/heads/main/files/background.jpg) repeat fixed bottom; 
+	background-size: cover;
+  	background-position: top right;
+}
+
+/* - ошибка */
+.b-feedback {
+	display: none;
+}
+
+.l-footer .links {
+    visibility: hidden;
+}
+
+.l-page {
+	max-width: 1000px !important;
+}
+
+/* Хедлайны */
+
+.subheadline, .midheadline, .headline {
+	color: var(--headline-text);
+  	background-color: var(--headline);
+  	border-color: var(--main_title);
+}
+
+/* top-menu */
+
+.l-top_menu-v2 {
+	background-size: contain;
+	background-color: var(--top_menu);
+}
+
+.l-top_menu-v2 .menu-dropdown>span {
+	background: var(--top_menu-v2);
+}
+
+.l-top_menu-v2 .submenu {
+	background: var(--top_menu-v3);
+}
+
+.l-top_menu-v2 .menu-icon.active, .l-top_menu-v2 .menu-icon:focus, .l-top_menu-v2 .menu-dropdown.active>span, .l-top_menu-v2 .menu-dropdown>span:focus {
+	background-color: var(--top_menu-v3);
+}
+
+.l-top_menu-v2 .submenu>a:hover {
+	background: var(--top_menu);
+	color: #123;
+}
+
+.l-top_menu-v2 .menu-dropdown>span a:active {
+	background-color: var(--top_menu-v3);
+}
+
+.l-top_menu-v2 .menu-dropdown>span a:hover {
+	background-color: #58768f;
+}
+  
+.l-top_menu-v2 .menu-icon:hover {
+	background-color: #567fa2;
+}
+
+.l-top_menu-v2.is-search-mobile .global-search {
+	background: var(--top_menu);
+}
+
+.l-top_menu-v2 .logo-container .glyph {
+    background-image: url(https://i.imgur.com/kyV0jln.png);
+}
+
+.l-top_menu-v2 .logo-container .logo {
+    background-image: url(https://raw.githubusercontent.com/Klamkottur/axis/refs/heads/main/files/logo.svg);
+  	background-size: 211px 190px;
+  	background-position: center;
+  	height: 23px;
+}
+
+/* Скрываем контент от тех, кто со стилями */
+.fc-hidden {
+	display: none;
+}
+
+.s-center center {
+	padding: 0 !important;
+}
+
+/* Меню клуба */
+.b-menu-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 23px;
+}
+
+.b-menu-line > .b-link {
+    display: block;
+    padding: 0 4px;
+    border-radius: 4px;
+    color: #114;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 32px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.b-menu-line > .b-link:before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 32px;
+    margin: 0 8px 0 0;
+    background: url(https://i.imgur.com/Py7QTHZ.png) no-repeat center;
+  	background-size: 18px 18px;
+}
+
+.b-menu-line > .b-link:hover, .b-menu-line > .b-link:active, .b-menu-line > .b-link:focus {
+    background: rgba(221, 221, 221, .5);
+    color: #00296f;
+    text-decoration: none;
+}
